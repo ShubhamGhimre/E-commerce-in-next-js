@@ -2,7 +2,7 @@
 
 import Avatar from "@/components/Avatar";
 import Heading from "@/components/Heading";
-import {Rating } from "@mui/material";
+import {Rating} from "@mui/material";
 import moment from "moment";
 
 interface ListRatingProps {

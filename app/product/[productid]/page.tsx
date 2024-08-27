@@ -1,7 +1,10 @@
-import { product } from "@/utils/product";
+
 import ProductDetails from "./ProductDetails";
 import Container from "@/components/container";
 import ListRating from "./ListRating";
+import { products } from "@/utils/products";
+
+
 
 
 interface IPrams {
@@ -9,7 +12,26 @@ interface IPrams {
 }
 
 const Product = ({ params }: { params: IPrams }) => {
+
     console.log("params", params);
+    // console.log("productID", params.productId);
+  
+    // const productId = params?.productId;
+
+    // if (productId) {
+    //   console.log("productId", productId); // Logs the extracted productId
+    // } else {
+    //   console.log("productId is not provided in props");
+    // }
+
+    const product = products.find((item) => {
+        item.id === params.productid;
+        console.log("item", item.id , "params", params);
+    });
+  
+
+
+
     return (
         <div className="p-8">
             <Container>

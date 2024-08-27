@@ -17,6 +17,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
 
     const productRatting = data.reviews.reduce((acc:number,item:any) => item.rating + acc,0 ) / data.reviews.length;
 
+
     return (
 
         <div 
